@@ -1,0 +1,134 @@
+/* 全体を中央ぞろえに */
+* {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+/* 大見出し "Ryuzo Nakamura"の部分 */
+h1 {
+  font-size: xx-large;
+  margin: auto;
+}
+/* 中見出し "SKILLS","WORKS"の部分 */
+h2 {
+  font-size: x-large;
+  margin-top: 10%;
+  margin-bottom: 0%;
+}
+/* WORKS直下、"Game"等のカテゴリ部分 */
+h3 {
+  font-size: large;
+  margin-top: 0%;
+}
+/* 制作物例のタイトル部分 */
+h4 {
+  font-size: medium;
+}
+
+/* header */
+/* アイコン */
+.my_image {
+  height: 30vw;
+  width: 30vw;
+  border-radius: 30px;
+  object-fit: cover;
+  object-position: 0% 0%;
+}
+/* "student"の部分 */
+.position {
+  margin-top: auto;
+}
+
+/* main > article "skills" */
+/* スキル部分 */
+.skills > ul {
+  display: flex;
+  list-style: none;
+  padding-left: 0%;
+  justify-content: space-around;
+  /* background-color: #b9b9b9; */
+}
+.skills li {
+  font-size: large;
+  color: rgb(43, 43, 43);
+  background-color: rgb(171, 171, 171);
+  box-shadow: 0px 7px rgb(110, 110, 110);
+  font-weight: bold;
+  width: 80px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 5%;
+  text-align: center;
+  /* 押せそうなボタン風に */
+}
+.skills a {
+  background-color: rgb(171, 171, 171);
+}
+.skills a:active {
+  box-shadow: none;
+  transform: translateY(7px);
+}
+.skills a,
+a:hover,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* main > article "works" */
+.works {
+  margin-top: 0%;
+}
+.works > section {
+  margin-top: 0%;
+}
+.info {
+  height: max-content;
+}
+.flex_box {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: baseline;
+  /* background-color: #b9b9b9; */
+}
+.flex_box > div {
+  box-sizing: content-box;
+  width: min-content;
+  height: max-content;
+  margin: 2%;
+  /* border: 5px solid darkblue; */
+}
+.work_image {
+  box-sizing: content-box;
+  height: 40vw;
+  width: 40vw;
+  margin: 3%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+/* ページトップに戻るボタン */
+.pagetop {
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  background: #fff;
+  border: solid 2px #000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.pagetop__arrow {
+  height: 10px;
+  width: 10px;
+  border-top: 3px solid #000;
+  border-right: 3px solid #000;
+  transform: translateY(20%) rotate(-45deg);
+}
+/* https://rilaks.jp/blog/pagetop-css/ こちらのサイトから拝借 */
